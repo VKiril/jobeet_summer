@@ -1,0 +1,20 @@
+Ibw\JobeetBundle\Entity\User:
+    type: entity
+    table: user
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        username:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 100
+        phoneNumber:
+            type: string
+            length: 50

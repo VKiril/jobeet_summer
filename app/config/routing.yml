@@ -1,0 +1,22 @@
+ibw_blog:
+    type: rest
+    resource: "@IbwBlogBundle/Resources/config/routing.yml"
+    prefix:   /api
+
+
+ibw_jobeet:
+    resource: "@IbwJobeetBundle/Resources/config/routing.yml"
+    prefix:   /
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
