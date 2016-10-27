@@ -11,8 +11,8 @@ parameters:
 
     mailer_transport:  smtp
     mailer_host:       ~
-    mailer_user: vasiltia.chiril@gmail.com
-    mailer_password: kiril010
+    mailer_user: 
+    mailer_password: 
 
     nexmo_api_key:      ~
     nexmo_api_secret:   ~
