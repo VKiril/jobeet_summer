@@ -147,18 +147,18 @@ class DefaultController extends Controller
 
         $message = Swift_Message::newInstance()
             ->setSubject('Contact enquiry from symblog')
-            ->setFrom('vasiltia.chiril@gmail.com')
-            ->setTo('everest0corp@gmail.com')
+            ->setFrom('.@gmail.com')
+            ->setTo('@gmail.com')
             ->setBody($this->renderView('IbwJobeetBundle:Default:mail.txt.twig' ));
 
         $user = new Client();
         $user->setUsername("test");
-        $user->setEmail("vasiltia.chiril@gmail.com");
+        $user->setEmail(".@gmail.com");
         $user->setPassword("test");
-        $user->setPhoneNumber("+37368106596");
+        $user->setPhoneNumber("+");
 
         try{
-            $smsMailer = new SmsMailer($user, $message, false, "+37368024060", "vasiltia.chiril@gmail.com" );
+            $smsMailer = new SmsMailer($user, $message, false, "+37368024060", ".@gmail.com" );
             $smsMailer->sendSMS($user, "test message", "StarSoft");
         } catch(Exception $e){
             print_r($e->getMessage());
